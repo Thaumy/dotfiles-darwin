@@ -1,0 +1,112 @@
+local window = {
+  ['P']             = '',
+  ['l']             = '',
+  ['S']             = '',
+  ['s']             = '',
+  ['t']             = '',
+  ['w']             = '',
+  ['C']             = '',
+  ['z']             = '',
+  ['a']             = '',
+  ['A']             = '',
+  ['d']             = '',
+  ['r']             = '',
+  ['y']             = '',
+  ['x']             = '',
+  ['c']             = '',
+  ['m']             = '',
+  ['q']             = '',
+  ['R']             = '',
+  ['?']             = '',
+  ['<']             = '',
+  ['>']             = '',
+
+  ['n']             = 'next_source',
+  ['i']             = 'show_file_details',
+  ['p']             = { 'toggle_preview', config = { use_float = false, use_image_nvim = false } },
+  ['<Cr>']          = 'open',
+  ['<M-j>']         = 'open',
+  ['<M-k>']         = 'close_node',
+  ['<Esc>']         = 'cancel',
+  ['<Space>']       = { 'toggle_node', nowait = false },
+  ['<2-LeftMouse>'] = 'open',
+}
+
+local filesystem = {
+  ['.']     = '',
+  ['/']     = '',
+  ['a']     = '',
+  ['c']     = '',
+  ['d']     = '',
+  ['f']     = '',
+  ['D']     = '',
+  ['#']     = '',
+  ['[g']    = '',
+  [']g']    = '',
+  ['o']     = '',
+  ['oc']    = '',
+  ['od']    = '',
+  ['og']    = '',
+  ['om']    = '',
+  ['on']    = '',
+  ['os']    = '',
+  ['ot']    = '',
+  ['<Bs>']  = '',
+  ['<C-x>'] = '',
+
+  ['1']     = 'navigate_up',
+  ['2']     = 'set_root',
+  ['r']     = 'refresh',
+  ['yy']    = 'copy',
+  ['to']    = { 'add', config = { show_path = 'none' } },
+  ['s']     = 'rename',
+  ['dd']    = 'delete',
+  ['<M-e>'] = 'close_window',
+  ['<Tab>'] = 'toggle_hidden',
+
+  ['yp']    = function(state)
+    local abs_path = state.tree:get_node().path
+    vim.fn.setreg('+', abs_path)
+  end,
+}
+
+local buffers = {
+  ['q']    = '',
+  ['/']    = '',
+  ['.']    = '',
+  ['o']    = '',
+  ['oc']   = '',
+  ['od']   = '',
+  ['om']   = '',
+  ['on']   = '',
+  ['os']   = '',
+  ['ot']   = '',
+  ['bd']   = '',
+  ['<Bs>'] = '',
+
+  ['rm']   = 'buffer_delete',
+}
+
+local git_status = {
+  ['o']  = '',
+  ['A']  = '',
+  ['gu'] = '',
+  ['ga'] = '',
+  ['gr'] = '',
+  ['gc'] = '',
+  ['gp'] = '',
+  ['gg'] = '',
+  ['oc'] = '',
+  ['od'] = '',
+  ['om'] = '',
+  ['on'] = '',
+  ['os'] = '',
+  ['ot'] = '',
+}
+
+return {
+  window = window,
+  filesystem = filesystem,
+  buffers = buffers,
+  git_status = git_status,
+}
