@@ -1,0 +1,8 @@
+*.*
+!.gitignore
+
+!cfg.sh
+!pwdc.sh
+!todo.sh
+!vi-project.sh
+!safe-remove.rs
