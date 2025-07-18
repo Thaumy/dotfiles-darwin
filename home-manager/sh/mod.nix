@@ -15,5 +15,6 @@ in
     (writeBin "cfg" etc/cfg.sh)
     (writeBin "pwdc" etc/pwdc.sh)
     (writeBin "todo" etc/todo.sh)
+    (writeBin "symlink-localize" etc/symlink-localize.sh)
   ];
 }
