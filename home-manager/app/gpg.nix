@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+_: {
   programs.gpg = {
     enable = true;
   };
