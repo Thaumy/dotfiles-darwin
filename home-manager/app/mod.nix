@@ -1,4 +1,4 @@
-{ ... }: {
+_: {
   imports = [
     ./aws.nix
     ./gpg.nix
