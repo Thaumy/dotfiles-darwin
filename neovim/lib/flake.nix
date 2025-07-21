@@ -8,7 +8,7 @@
     flake-utils.url = "github:numtide/flake-utils/11707dc2f618dd54ca8739b309ec4fc024de578b"; # 24-11-14
   };
 
-  outputs = inputs@{ ... }: inputs.flake-utils.lib.eachSystem
+  outputs = inputs: inputs.flake-utils.lib.eachSystem
     [ "aarch64-darwin" ]
     (system:
       let
