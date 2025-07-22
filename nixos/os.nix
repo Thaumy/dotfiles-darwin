@@ -1,5 +1,6 @@
 { ... }: {
   imports = [
+    ./sec.nix
     ./pkgs.nix
     ./locale.nix
     ./app/mod.nix
