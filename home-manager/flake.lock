@@ -35,7 +35,7 @@
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
-          "nvim-nightly-overlay",
+          "nvim-nightly",
           "nixpkgs"
         ]
       },
@@ -56,7 +56,7 @@
     "flake-parts_2": {
       "inputs": {
         "nixpkgs-lib": [
-          "nvim-nightly-overlay",
+          "nvim-nightly",
           "hercules-ci-effects",
           "nixpkgs"
         ]
@@ -98,7 +98,7 @@
         "flake-compat": "flake-compat_2",
         "gitignore": "gitignore",
         "nixpkgs": [
-          "nvim-nightly-overlay",
+          "nvim-nightly",
           "nixpkgs"
         ]
       },
@@ -119,7 +119,7 @@
     "gitignore": {
       "inputs": {
         "nixpkgs": [
-          "nvim-nightly-overlay",
+          "nvim-nightly",
           "git-hooks",
           "nixpkgs"
         ]
@@ -142,7 +142,7 @@
       "inputs": {
         "flake-parts": "flake-parts_2",
         "nixpkgs": [
-          "nvim-nightly-overlay",
+          "nvim-nightly",
           "nixpkgs"
         ]
       },
@@ -230,7 +230,7 @@
         "type": "github"
       }
     },
-    "nvim-nightly-overlay": {
+    "nvim-nightly": {
       "inputs": {
         "flake-compat": "flake-compat",
         "flake-parts": "flake-parts",
@@ -291,7 +291,7 @@
       "inputs": {
         "home-manager": "home-manager",
         "libnvimcfg": "libnvimcfg",
-        "nvim-nightly-overlay": "nvim-nightly-overlay",
+        "nvim-nightly": "nvim-nightly",
         "pkgs": "pkgs_2"
       }
     },
@@ -335,7 +335,7 @@
     "treefmt-nix": {
       "inputs": {
         "nixpkgs": [
-          "nvim-nightly-overlay",
+          "nvim-nightly",
           "nixpkgs"
         ]
       },
