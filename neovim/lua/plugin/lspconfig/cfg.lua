@@ -118,6 +118,7 @@ vim.lsp.enable {
   'nil_ls',                 -- Nix
   'yamlls',                 -- YAML
   'pyright',                -- Python
+  'lemminx',                -- XML
   'marksman',               -- Markdown
   'tinymist',               -- Typst
   'omnisharp',              -- C#
