@@ -107,6 +107,7 @@ in
       taplo # TOML
       biome # Web
       pyright # Python
+      lemminx # XML
       fantomas # F# fmt
       marksman # Markdown
       tinymist # Typst
