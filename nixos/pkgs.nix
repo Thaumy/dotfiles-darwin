@@ -6,12 +6,14 @@
     jfrog-cli
 
     fd
+    util-linux
     uutils-findutils
     uutils-diffutils
     uutils-coreutils-noprefix
 
     jq
     tokei
+    pandoc
     ripgrep
     tree-sitter
 
@@ -27,6 +29,7 @@
     btop
     tree
     dust
+    pstree
 
     tmux
     devenv
