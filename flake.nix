@@ -11,6 +11,7 @@
       url = "github:oxalica/rust-overlay/08ff39bf869cadca3102b39824f4c7025186b7dc"; # 25-8-2;
       inputs.nixpkgs.follows = "pkgs";
     };
+    rsbin.url = ./rsbin;
 
     home-manager = {
       url = "github:nix-community/home-manager/97118a310eb8e13bc1b9b12d67267e55b7bee6c8"; # 25-5-18
