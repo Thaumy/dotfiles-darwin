@@ -9,14 +9,14 @@ if [ "$1" = 'v' ]; then
 fi
 
 if [ "$1" = 'os' ]; then
-  exec nvim --cmd 'cd ~/cfg/nixos' ~/cfg/nixos/flake.nix
+  exec nvim --cmd 'cd ~/cfg/nixos' ~/cfg/nixos/os.nix
 fi
 
 if [ "$1" = 'hm' ]; then
   if [ "$2" = 'sh' ]; then
     exec nvim --cmd 'cd ~/cfg/home-manager/sh' ~/cfg/home-manager/sh/mod.nix
   else
-    exec nvim --cmd 'cd ~/cfg/home-manager' ~/cfg/home-manager/flake.nix
+    exec nvim --cmd 'cd ~/cfg/home-manager' ~/cfg/home-manager/home.nix
   fi
 fi
 
