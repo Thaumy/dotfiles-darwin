@@ -188,15 +188,14 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1749114109,
-        "narHash": "sha256-cvPf/nmE51jwjPqTCcmTCB2SEs4Cj6pD2NuiIYZC/pU=",
-        "path": "/Users/thaumy/cfg/neovim/lib",
+        "path": "neovim/lib",
         "type": "path"
       },
       "original": {
-        "path": "/Users/thaumy/cfg/neovim/lib",
+        "path": "neovim/lib",
         "type": "path"
-      }
+      },
+      "parent": []
     },
     "neovim-src": {
       "flake": false,
@@ -211,6 +210,27 @@
       "original": {
         "owner": "neovim",
         "repo": "neovim",
+        "type": "github"
+      }
+    },
+    "nix-darwin": {
+      "inputs": {
+        "nixpkgs": [
+          "pkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1751313918,
+        "narHash": "sha256-HsJM3XLa43WpG+665aGEh8iS8AfEwOIQWk3Mke3e7nk=",
+        "owner": "nix-darwin",
+        "repo": "nix-darwin",
+        "rev": "e04a388232d9a6ba56967ce5b53a8a6f713cdfcf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-darwin",
+        "ref": "master",
+        "repo": "nix-darwin",
         "type": "github"
       }
     },
@@ -291,8 +311,10 @@
       "inputs": {
         "home-manager": "home-manager",
         "libnvimcfg": "libnvimcfg",
+        "nix-darwin": "nix-darwin",
         "nvim-nightly": "nvim-nightly",
-        "pkgs": "pkgs_2"
+        "pkgs": "pkgs_2",
+        "rust-overlay": "rust-overlay_2"
       }
     },
     "rust-overlay": {
@@ -314,6 +336,27 @@
         "owner": "oxalica",
         "repo": "rust-overlay",
         "rev": "9c8ea175cf9af29edbcff121512e44092a8f37e4",
+        "type": "github"
+      }
+    },
+    "rust-overlay_2": {
+      "inputs": {
+        "nixpkgs": [
+          "pkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1753066249,
+        "narHash": "sha256-j2UBrfDRIePGx3532Bbb9UeosNX2F73hfOAHtmACfnM=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "0751b65633a1785743ca44fd7c14a633c54c1f91",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "0751b65633a1785743ca44fd7c14a633c54c1f91",
         "type": "github"
       }
     },
