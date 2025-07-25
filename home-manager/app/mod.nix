@@ -1,6 +1,7 @@
 _: {
   imports = [
     ./aws.nix
+    ./git.nix
     ./gpg.nix
     ./btop.nix
     ./fish.nix
