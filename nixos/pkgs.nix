@@ -11,6 +11,10 @@
     uutils-coreutils-noprefix
 
     jq
+    tokei
+    ripgrep
+    tree-sitter
+
     zip
     p7zip
 
@@ -27,12 +31,8 @@
     tmux
     devenv
     alacritty
-    any-nix-shell
-
-    tokei
-    ripgrep
-    tree-sitter
     rust-script
+    any-nix-shell
 
     code-cursor
     home-manager
