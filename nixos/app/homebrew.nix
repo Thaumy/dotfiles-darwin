@@ -11,4 +11,5 @@ _: {
       "mos"
     ];
   };
+  environment.systemPath = [ "/opt/homebrew/bin" ];
 }
