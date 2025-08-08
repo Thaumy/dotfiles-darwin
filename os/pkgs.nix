@@ -2,6 +2,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+    gh
     awscli2
     jfrog-cli
 
@@ -12,6 +13,7 @@
     uutils-coreutils-noprefix
 
     jq
+    taplo
     tokei
     pandoc
     ripgrep
@@ -24,6 +26,7 @@
     swagger-codegen3
     openapi-generator-cli
 
+    lf
     bat
     eza
     btop
