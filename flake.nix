@@ -27,7 +27,7 @@
       inputs.nix-darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         specialArgs = { inherit inputs; };
-        modules = [ ./nixos/mod.nix ];
+        modules = [ ./os/mod.nix ];
       };
 
     homeConfigurations."thaumy" =
