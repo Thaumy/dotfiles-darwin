@@ -26,11 +26,9 @@ map('x', 'y', function()
   local from = vim.fn.getpos 'v'
   local to = vim.fn.getpos '.'
   local mode = vim.fn.mode()
-  --require 'infra.debug'.notify { to[3] - 1 == #line }
 
   local selected = vim.fn.getregion(from, to, { type = mode })
   local text = table.concat(selected, '\n')
-  --require 'infra.debug'.notify(text)
 
   if mode == 'v' or mode == '\22' then
     -- visual or visual block
