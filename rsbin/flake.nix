@@ -63,6 +63,7 @@
         packages = {
           edit-config = build-pkg ./edit-config "edit-config";
           safe-remove = build-pkg ./safe-remove "safe-remove";
+          vi-project = build-pkg ./vi-project "vi-project";
         };
       });
 }
