@@ -7,6 +7,7 @@
     jfrog-cli
 
     fd
+    sd
     util-linux
     uutils-findutils
     uutils-diffutils
@@ -37,8 +38,8 @@
     tmux
     devenv
     alacritty
-    rust-script
     any-nix-shell
+    unixtools.watch
 
     code-cursor
     home-manager
