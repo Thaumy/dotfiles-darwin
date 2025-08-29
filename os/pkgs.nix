@@ -41,6 +41,7 @@
     any-nix-shell
     unixtools.watch
 
+    sccache
     code-cursor
     home-manager
   ];
