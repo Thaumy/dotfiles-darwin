@@ -10,9 +10,6 @@
     uutils-diffutils
     uutils-coreutils-noprefix
 
-    zip
-    p7zip
-
     protobuf
     swagger-codegen3
     openapi-generator-cli
