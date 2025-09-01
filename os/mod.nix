@@ -5,6 +5,7 @@ _: {
     ./locale.nix
     ./app/mod.nix
     ./dev/mod.nix
+    ./pkgs/mod.nix
   ];
 
   system.stateVersion = 6;
