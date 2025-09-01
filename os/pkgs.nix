@@ -18,9 +18,6 @@
     bat
     eza
     btop
-    tree
-    dust
-    pstree
 
     tmux
     devenv
