@@ -5,18 +5,10 @@
     jfrog-cli
 
     fd
-    sd
     util-linux
     uutils-findutils
     uutils-diffutils
     uutils-coreutils-noprefix
-
-    jq
-    taplo
-    tokei
-    pandoc
-    ripgrep
-    tree-sitter
 
     zip
     p7zip
