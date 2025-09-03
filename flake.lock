@@ -248,8 +248,8 @@
       },
       "original": {
         "owner": "nix-darwin",
-        "ref": "master",
         "repo": "nix-darwin",
+        "rev": "8df64f819698c1fee0c2969696f54a843b2231e8",
         "type": "github"
       }
     },
