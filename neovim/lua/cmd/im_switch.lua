@@ -1,4 +1,4 @@
--- auto switch fcitx
+-- auto switch input method
 
 if vim.env.USER == 'root' then return end
 
