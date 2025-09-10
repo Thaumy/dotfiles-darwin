@@ -18,6 +18,7 @@
     bat
     eza
     btop
+    procs
 
     tmux
     devenv
@@ -25,6 +26,7 @@
     any-nix-shell
     unixtools.watch
 
+    cmake
     sccache
     code-cursor
     home-manager
