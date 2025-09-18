@@ -81,6 +81,11 @@ map({ 'n', 'x' }, 'ww', function()
   then
     return
   end
+  if vim.bo.ft == 'markdown' then
+    vim.cmd 'Neoformat denofmt'
+  else
+    vim.lsp.buf.format { sync = true }
+  end
   vim.cmd 'w'
 end)
 map_cmd({ 'n', 'x' }, 'wa', 'wa')
