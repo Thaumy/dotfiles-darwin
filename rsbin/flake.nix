@@ -64,6 +64,7 @@
           edit-config = build-pkg ./edit-config "edit-config";
           safe-remove = build-pkg ./safe-remove "safe-remove";
           vi-project = build-pkg ./vi-project "vi-project";
+          vi-visual-pane = build-pkg ./vi-visual-pane "vi-visual-pane";
         };
       });
 }
