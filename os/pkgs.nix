@@ -27,6 +27,8 @@
     unixtools.watch
 
     cmake
+    minio
+    docker
     sccache
     code-cursor
     home-manager
