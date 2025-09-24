@@ -128,6 +128,7 @@ vim.lsp.enable {
   'yamlls',                 -- YAML
   'pyright',                -- Python
   'lemminx',                -- XML
+  'fish_lsp',               -- fish shell
   'marksman',               -- Markdown
   'tinymist',               -- Typst
   'omnisharp',              -- C#

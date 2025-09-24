@@ -108,6 +108,7 @@ in
       biome # Web
       pyright # Python
       lemminx # XML
+      fish-lsp # fish shell
       fantomas # F# fmt
       marksman # Markdown
       tinymist # Typst
