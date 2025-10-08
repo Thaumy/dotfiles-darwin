@@ -2,7 +2,7 @@
 TERM = "xterm-256color"
 
 [terminal]
-shell = "/run/current-system/sw/bin/tmux"
+shell = "tmux"
 
 [font]
 size = 18
