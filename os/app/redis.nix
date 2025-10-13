@@ -1,9 +1,13 @@
-_: {
-  # NOTE:
-  # Please ensure the `/var/lib/redis` is created with
-  # correct permission, otherwise this service will
-  # failed to run.
+_:
+let
+  data_dir = "/var/lib/redis";
+in
+{
   services.redis = {
     enable = true;
+    dataDir = data_dir;
   };
+  system.activationScripts.postActivation.text = ''
+    mkdir -p ${data_dir}
+  '';
 }
