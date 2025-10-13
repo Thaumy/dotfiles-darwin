@@ -10,4 +10,12 @@ _: {
 
   system.stateVersion = 6;
   system.primaryUser = "thaumy";
+
+  users = {
+    knownGroups = [ "bldcache" ];
+    groups."bldcache" = {
+      gid = 1000;
+      members = [ "thaumy" ];
+    };
+  };
 }
