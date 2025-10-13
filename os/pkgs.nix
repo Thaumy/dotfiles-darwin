@@ -29,7 +29,6 @@
     cmake
     minio
     docker
-    sccache
     code-cursor
     home-manager
   ];
