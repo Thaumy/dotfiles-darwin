@@ -1,4 +1,3 @@
-
 local format = require 'plugin.cmp.cfg.format'
 local plugin = require 'cmp'
 local luasnip = require 'luasnip'
@@ -10,7 +9,6 @@ plugin.setup {
   mapping = plugin.mapping.preset.insert {
     ['<M-k>'] = plugin.mapping.scroll_docs(-3),
     ['<M-j>'] = plugin.mapping.scroll_docs(3),
-    ['<Tab>'] = plugin.mapping.confirm { select = true },
     ['<Cr>'] = plugin.mapping.confirm { select = true },
   },
   sources = {

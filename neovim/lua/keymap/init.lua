@@ -176,7 +176,7 @@ vim.api.nvim_create_autocmd('FileType', {
         -- feed <Esc> to exit visual mode
         vim.api.nvim_feedkeys('\27', 'x', false)
 
-        -- cursor reloc
+        -- cursor relocation
         local max_row = new_len
         if from < max_row then
           vim.print(from)
