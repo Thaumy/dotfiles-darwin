@@ -161,7 +161,7 @@
         "type": "github"
       }
     },
-    "home-manager": {
+    "hm": {
       "inputs": {
         "nixpkgs": [
           "pkgs"
@@ -326,7 +326,7 @@
     },
     "root": {
       "inputs": {
-        "home-manager": "home-manager",
+        "hm": "hm",
         "libnvimcfg": "libnvimcfg",
         "nix-darwin": "nix-darwin",
         "nvim-nightly": "nvim-nightly",
