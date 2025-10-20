@@ -13,7 +13,7 @@
     };
     rsbin.url = ./rsbin;
 
-    home-manager = {
+    hm = {
       url = "github:nix-community/home-manager/bcccb01d0a353c028cc8cb3254cac7ebae32929e"; # 25-10-10
       inputs.nixpkgs.follows = "pkgs";
     };
@@ -31,7 +31,7 @@
       };
 
     homeConfigurations."thaumy" =
-      inputs.home-manager.lib.homeManagerConfiguration {
+      inputs.hm.lib.homeManagerConfiguration {
         pkgs = import inputs.pkgs {
           system = "aarch64-darwin";
           config.allowUnfree = true;
