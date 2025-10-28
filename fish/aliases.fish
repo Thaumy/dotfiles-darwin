@@ -22,10 +22,10 @@ alias s sudo
 alias sc "sudo -u $USER"
 alias su "sudo su"
 
-alias hmb "home-manager build --flake path:$HOME/cfg --cores 6 --no-out-link"
-alias hms "home-manager switch --flake path:$HOME/cfg"
-alias nrb "sudo darwin-rebuild build --flake path:$HOME/cfg --cores 6"
-alias nrs "sudo darwin-rebuild switch --flake path:$HOME/cfg"
+alias hmb "home-manager build --flake path:(realpath $HOME/cfg) --cores 6 --no-out-link"
+alias hms "home-manager switch --flake path:(realpath $HOME/cfg)"
+alias nrb "sudo darwin-rebuild build --flake path:(realpath $HOME/cfg) --cores 6"
+alias nrs "sudo darwin-rebuild switch --flake path:(realpath $HOME/cfg)"
 
 alias dk docker
 alias lzdk lazydocker
