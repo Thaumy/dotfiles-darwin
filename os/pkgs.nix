@@ -5,6 +5,7 @@
     jfrog-cli
 
     fd
+    watchexec
     util-linux
     uutils-findutils
     uutils-diffutils
