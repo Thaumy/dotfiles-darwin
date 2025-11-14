@@ -5,5 +5,6 @@
   tokei
   pandoc
   ripgrep
+  libxml2
   tree-sitter
 ]
