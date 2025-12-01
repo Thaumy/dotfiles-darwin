@@ -27,8 +27,12 @@ end
 
 local when_change = function(args)
   local buf = args.buf
-  local win = vim.api.nvim_get_current_win()
   debounce:schedule(200, function()
+    local win = vim.api.nvim_get_current_win()
+
+    -- cancel if we have switched to another window
+    if buf ~= vim.api.nvim_win_get_buf(win) then return end
+
     if invalid(buf, win) then return end
 
     if ext_marks[buf] == nil then
@@ -87,9 +91,12 @@ vim.api.nvim_create_autocmd(
 
 local when_scroll = function(args)
   local buf = args.buf
-  if buf ~= vim.api.nvim_get_current_buf() then return end
-  local win = vim.api.nvim_get_current_win()
   debounce:schedule(200, function()
+    local win = vim.api.nvim_get_current_win()
+
+    -- cancel if we have switched to another window
+    if buf ~= vim.api.nvim_win_get_buf(win) then return end
+
     if invalid(buf, win) then return end
 
     if ext_marks[buf] == nil then
