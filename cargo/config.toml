@@ -3,6 +3,7 @@ git-fetch-with-cli = true
 
 [build]
 rustc-wrapper = "sccache"
+target-dir = ".cache/cargo/target"
 
 [alias]
 u = 'update'
