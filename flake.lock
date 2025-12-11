@@ -87,11 +87,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "path": "neovim/lib",
+        "path": "./neovim/lib",
         "type": "path"
       },
       "original": {
-        "path": "neovim/lib",
+        "path": "./neovim/lib",
         "type": "path"
       },
       "parent": []
@@ -236,11 +236,11 @@
         "rust-overlay": "rust-overlay_2"
       },
       "locked": {
-        "path": "rsbin",
+        "path": "./rsbin",
         "type": "path"
       },
       "original": {
-        "path": "rsbin",
+        "path": "./rsbin",
         "type": "path"
       },
       "parent": []
