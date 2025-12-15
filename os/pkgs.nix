@@ -11,10 +11,6 @@
     uutils-diffutils
     uutils-coreutils-noprefix
 
-    protobuf
-    swagger-codegen3
-    openapi-generator-cli
-
     lf
     bat
     eza
