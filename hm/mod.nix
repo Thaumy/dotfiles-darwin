@@ -9,4 +9,6 @@ _: {
     stateVersion = "25.05";
     homeDirectory = "/Users/thaumy";
   };
+
+  news.display = "silent";
 }
