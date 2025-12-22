@@ -7,9 +7,9 @@ _: {
     ./btop.nix
     ./fish.nix
     ./tmux.nix
+    ./nvim.nix
     ./rsbin.nix
     ./cargo.nix
-    ./neovim.nix
     ./direnv.nix
     ./alacritty.nix
   ];
