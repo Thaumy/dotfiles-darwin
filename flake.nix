@@ -3,7 +3,7 @@
     pkgs.url = "github:NixOS/nixpkgs/fdd4f3a74622d9d192ef665eecd6ac9ed0359a8d"; # 25-12-20
 
     nix-darwin = {
-      url = "github:nix-darwin/nix-darwin/7e22bf538aa3e0937effcb1cee73d5f1bcc26f79"; # 25-12-7
+      url = "github:nix-darwin/nix-darwin/5fb45ece6129bd7ad8f7310df0ae9c00bae7c562"; # 25-12-18
       inputs.nixpkgs.follows = "pkgs";
     };
 
