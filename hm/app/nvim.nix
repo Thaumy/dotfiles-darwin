@@ -92,7 +92,6 @@ in
       luasnip # snippet
       neoformat # formatter
       crates-nvim # crate.io cmp
-      avante-nvim # AI code suggestions
       comment-nvim # better comment support
       autoclose-nvim # auto close pairs and brackets
     ];
