@@ -11,9 +11,8 @@ local function trailing_spaces_len(line)
 end
 
 local ns = vim.api.nvim_create_namespace 'trailing-space-hl'
-local ext_marks = {}
-local checked_rows = {}
 local debounce = require 'infra.debounce':new()
+local hl_results = {}
 
 local function invalid(buf, win)
   return
@@ -35,11 +34,11 @@ local when_change = function(args)
 
     if invalid(buf, win) then return end
 
-    if ext_marks[buf] == nil then
-      ext_marks[buf] = {}
-    end
-    if checked_rows[buf] == nil then
-      checked_rows[buf] = {}
+    if hl_results[buf] == nil then
+      hl_results[buf] = {
+        ext_marks = {},
+        checked_rows = {},
+      }
     end
 
     local in_insert_mode = vim.api.nvim_get_mode().mode == 'i'
@@ -52,14 +51,16 @@ local when_change = function(args)
     -- indexing is zero-based, end exclusive, so we have [row_from, row_to]
     local lines = vim.api.nvim_buf_get_lines(buf, row_from - 1, row_to, false)
 
+    local hl_result = hl_results[buf]
+
     for i, line in ipairs(lines) do
       local row = row_from + i - 1
 
       -- clear old hl
-      local id = ext_marks[buf][row]
+      local id = hl_result.ext_marks[row]
       if id ~= nil then
         vim.api.nvim_buf_del_extmark(buf, ns, id)
-        ext_marks[buf][row] = nil
+        hl_result.ext_marks[row] = nil
       end
 
       -- skip the line currently being edited
@@ -70,14 +71,14 @@ local when_change = function(args)
       -- has trailing space
       if line:byte(-1) == 32 then
         local len = #line
-        ext_marks[buf][row] = vim.api.nvim_buf_set_extmark(
+        hl_result.ext_marks[row] = vim.api.nvim_buf_set_extmark(
           buf, ns,
           row - 1, len - trailing_spaces_len(line),
           { end_col = len, hl_group = 'TrailingSpace' }
         )
       end
 
-      checked_rows[buf][row] = true
+      hl_result.checked_rows[row] = true
 
       ::continue::
     end
@@ -99,11 +100,11 @@ local when_scroll = function(args)
 
     if invalid(buf, win) then return end
 
-    if ext_marks[buf] == nil then
-      ext_marks[buf] = {}
-    end
-    if checked_rows[buf] == nil then
-      checked_rows[buf] = {}
+    if hl_results[buf] == nil then
+      hl_results[buf] = {
+        ext_marks = {},
+        checked_rows = {},
+      }
     end
 
     local in_insert_mode = vim.api.nvim_get_mode().mode == 'i'
@@ -116,11 +117,13 @@ local when_scroll = function(args)
     -- indexing is zero-based, end exclusive, so we have [row_from, row_to]
     local lines = vim.api.nvim_buf_get_lines(buf, row_from - 1, row_to, false)
 
+    local hl_result = hl_results[buf]
+
     for i, line in ipairs(lines) do
       local row = row_from + i - 1
 
       -- skip checked rows
-      if checked_rows[buf][row] ~= nil then
+      if hl_result.checked_rows[row] ~= nil then
         goto continue
       end
 
@@ -132,14 +135,14 @@ local when_scroll = function(args)
       -- has trailing space
       if line:byte(-1) == 32 then
         local len = #line
-        ext_marks[buf][row] = vim.api.nvim_buf_set_extmark(
+        hl_result.ext_marks[row] = vim.api.nvim_buf_set_extmark(
           buf, ns,
           row - 1, len - trailing_spaces_len(line),
           { end_col = len, hl_group = 'TrailingSpace' }
         )
       end
 
-      checked_rows[buf][row] = true
+      hl_result.checked_rows[row] = true
 
       ::continue::
     end
@@ -152,7 +155,6 @@ vim.api.nvim_create_autocmd('WinScrolled', {
 
 vim.api.nvim_create_autocmd('BufDelete', {
   callback = function(args)
-    ext_marks[args.buf] = nil
-    checked_rows[args.buf] = nil
+    hl_results[args.buf] = nil
   end,
 })
