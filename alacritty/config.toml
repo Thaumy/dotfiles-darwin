@@ -16,8 +16,16 @@ option_as_alt = "Both"
 
 [keyboard]
 bindings = [
-  { mods = "Control | Super", key = "k", action = "IncreaseFontSize" },
-  { mods = "Control | Super", key = "j", action = "DecreaseFontSize" },
+  { mods = "Control | Alt", key = "k", command = { program = "alacritty", args = [
+    "msg",
+    "config",
+    "font.size=22.8",
+  ] } },
+  { mods = "Control | Alt", key = "j", command = { program = "alacritty", args = [
+    "msg",
+    "config",
+    "font.size=18",
+  ] } },
 
   # unmap
   { mode = "Vi", key = "i", action = "ReceiveChar" },
