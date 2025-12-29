@@ -50,7 +50,7 @@ local when_change = function(args)
     local row_from = win_info.topline
     local row_to = win_info.botline
     -- indexing is zero-based, end exclusive, so we have [row_from, row_to]
-    local lines = vim.api.nvim_buf_get_lines(buf, row_from - 1, row_to, false)
+    local lines = vim.api.nvim_buf_get_lines(buf, row_from - 1, row_to, true)
 
     local hl_result = hl_results[buf]
 
@@ -116,7 +116,7 @@ local when_scroll = function(args)
     local row_from = win_info.topline
     local row_to = win_info.botline
     -- indexing is zero-based, end exclusive, so we have [row_from, row_to]
-    local lines = vim.api.nvim_buf_get_lines(buf, row_from - 1, row_to, false)
+    local lines = vim.api.nvim_buf_get_lines(buf, row_from - 1, row_to, true)
 
     local hl_result = hl_results[buf]
 
