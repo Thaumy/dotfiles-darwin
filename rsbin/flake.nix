@@ -63,6 +63,7 @@
         packages = {
           edit-config = build-pkg ./edit-config "edit-config";
           git-abort = build-pkg ./git-abort "git-abort";
+          git-continue = build-pkg ./git-continue "git-continue";
           safe-remove = build-pkg ./safe-remove "safe-remove";
           vi-project = build-pkg ./vi-project "vi-project";
           vi-visual-pane = build-pkg ./vi-visual-pane "vi-visual-pane";
