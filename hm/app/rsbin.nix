@@ -7,6 +7,7 @@ in
 {
   home.packages = with rsbin; [
     (edit-config "cfg")
+    (git-abort "git-abort")
     (safe-remove "rr")
     (vi-project "vp")
     (vi-visual-pane "vvp")
