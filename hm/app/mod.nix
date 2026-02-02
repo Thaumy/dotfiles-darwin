@@ -6,6 +6,7 @@ _: {
     ./zsh.nix
     ./bat.nix
     ./btop.nix
+    ./bash.nix
     ./fish.nix
     ./tmux.nix
     ./nvim.nix
