@@ -8,6 +8,7 @@ in
   home.packages = with rsbin; [
     (edit-config "cfg")
     (git-abort "git-abort")
+    (git-blame-line "git-blame-line")
     (git-conflicts "git-conflicts")
     (git-continue "git-continue")
     (safe-remove "rr")
