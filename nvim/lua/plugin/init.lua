@@ -16,7 +16,6 @@ local specs = {
   require 'plugin.neo-tree.spec',
   require 'plugin.telescope.spec',
   require 'plugin.md-preview.spec',
-  require 'plugin.git-messenger.spec',
   require 'plugin.actions-preview.spec',
 
   -- analyzers
