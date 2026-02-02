@@ -63,6 +63,7 @@
         packages = {
           edit-config = build-pkg ./edit-config "edit-config";
           git-abort = build-pkg ./git-abort "git-abort";
+          git-blame-line = build-pkg ./git-blame-line "git-blame-line";
           git-conflicts = build-pkg ./git-conflicts "git-conflicts";
           git-continue = build-pkg ./git-continue "git-continue";
           safe-remove = build-pkg ./safe-remove "safe-remove";
