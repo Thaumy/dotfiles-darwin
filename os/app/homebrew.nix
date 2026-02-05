@@ -9,6 +9,7 @@ _: {
     ];
     casks = [
       "mos"
+      "notunes"
     ];
   };
   environment.systemPath = [ "/opt/homebrew/bin" ];
