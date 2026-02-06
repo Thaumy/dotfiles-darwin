@@ -14,7 +14,7 @@
     rsbin.url = "path:./rsbin";
 
     hm = {
-      url = "github:nix-community/home-manager/bb35f07cc95a73aacbaf1f7f46bb8a3f40f265b5"; # 25-12-20
+      url = "github:nix-community/home-manager/7c5d9345ad7cc38832cd4007f5cd03daad64d75b"; # 26-1-10
       inputs.nixpkgs.follows = "pkgs";
     };
 
