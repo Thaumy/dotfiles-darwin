@@ -1,6 +1,6 @@
 {
   inputs = {
-    pkgs.url = "github:NixOS/nixpkgs/9639dc09756f494050ed2106e7ae63f96631ff7a"; # 26-1-10
+    pkgs.url = "github:NixOS/nixpkgs/fa1c3479a64ddf680c846dc1af05d3c0e64172f3"; # 26-2-11
 
     nix-darwin = {
       url = "github:nix-darwin/nix-darwin/6c5a56295d2a24e43bcd8af838def1b9a95746b2"; # 26-2-13
