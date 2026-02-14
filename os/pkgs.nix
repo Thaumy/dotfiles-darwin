@@ -5,6 +5,7 @@
     jfrog-cli
 
     fd
+    rsync
     watchexec
     util-linux
     uutils-findutils
@@ -23,9 +24,14 @@
     any-nix-shell
     unixtools.watch
 
+    uutils-findutils
+    uutils-diffutils
+    uutils-coreutils-noprefix
+
     cmake
     minio
     docker
+    xxHash
     code-cursor
     home-manager
   ];
