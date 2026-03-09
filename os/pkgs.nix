@@ -32,6 +32,7 @@
     minio
     docker
     xxHash
+    firefox
     code-cursor
     home-manager
   ];
