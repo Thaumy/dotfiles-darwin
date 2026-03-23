@@ -9,6 +9,7 @@ let
 in
 {
   home.packages = [
+    (writeBin "fstc" etc/fstc.sh)
     (writeBin "pwdc" etc/pwdc.sh)
     (writeBin "todo" etc/todo.sh)
     (writeBin "symlink-localize" etc/symlink-localize.sh)

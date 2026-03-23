@@ -7,6 +7,7 @@
     fd
     rsync
     watchexec
+    applesauce
     util-linux
     uutils-findutils
     uutils-diffutils
