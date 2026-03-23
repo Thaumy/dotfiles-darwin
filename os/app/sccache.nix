@@ -7,7 +7,7 @@ in
     systemPackages = [ pkgs.sccache ];
     variables = {
       SCCACHE_DIR = cache_dir;
-      SCCACHE_CACHE_SIZE = "50G";
+      SCCACHE_CACHE_SIZE = "20G";
     };
   };
   system.activationScripts.postActivation.text = ''
