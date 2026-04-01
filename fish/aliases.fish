@@ -24,6 +24,7 @@ alias su "sudo su"
 
 alias hmb "home-manager build --flake path:(realpath $HOME/cfg) --cores 6 --no-out-link"
 alias hms "home-manager switch --flake path:(realpath $HOME/cfg)"
+alias nfu "nix flake update"
 alias nrb "sudo darwin-rebuild build --flake path:(realpath $HOME/cfg) --cores 6"
 alias nrs "sudo darwin-rebuild switch --flake path:(realpath $HOME/cfg)"
 
