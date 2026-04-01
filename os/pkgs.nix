@@ -20,6 +20,7 @@
     procs
 
     tmux
+    dash
     devenv
     alacritty
     any-nix-shell
@@ -33,6 +34,7 @@
     minio
     docker
     xxHash
+    librewolf
     code-cursor
     home-manager
   ];
