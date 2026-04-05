@@ -1,5 +1,6 @@
 use std::env::{self, current_dir};
 use std::path::{Path, PathBuf};
+use std::process::Command;
 
 use anyhow::{Context, Result, bail};
 
@@ -51,7 +52,10 @@ fn raw() -> Result<Vec<PathBuf>> {
         .collect();
     let paths = paths?;
 
-    trash::delete_all(&paths).expect("Failed to trash files!");
+    let status = Command::new("trash").args(paths.iter()).spawn()?.wait()?;
+    if !status.success() {
+        bail!("Failed to trash files!")
+    }
 
     Ok(paths)
 }
