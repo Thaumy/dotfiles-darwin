@@ -16,5 +16,5 @@ in
     (vi-visual-pane "vvp")
   ];
 
-  home.file.".config/rsbin/edit-config/config.toml".source = mkSymlink "${homeDir}/cfg/rsbin/edit-config/config.toml";
+  xdg.configFile."rsbin/edit-config/config.toml".source = mkSymlink "${homeDir}/cfg/rsbin/edit-config/config.toml";
 }
