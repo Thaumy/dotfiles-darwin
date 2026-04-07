@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env dash
 
 if [ -z "$1" ]; then
   echo 'do nothing.'
@@ -6,7 +6,7 @@ if [ -z "$1" ]; then
 fi
 
 if [ -z "$2" ]; then
-  exec fd -d 1 -t l '.*' "$1" -x bash -c 'mv "$(readlink "{}")" "{}"'
+  exec fd -d 1 -t l '.*' "$1" -x dash -c 'mv "$(readlink "{}")" "{}"'
 else
-  exec fd -d "$2" -t l '.*' "$1" -x bash -c 'mv "$(readlink "{}")" "{}"'
+  exec fd -d "$2" -t l '.*' "$1" -x dash -c 'mv "$(readlink "{}")" "{}"'
 fi

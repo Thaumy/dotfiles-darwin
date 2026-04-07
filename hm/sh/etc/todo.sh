@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/usr/bin/env dash
 
 exec nvim "/Users/thaumy/Documents/TODO.md"
