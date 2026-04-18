@@ -34,6 +34,7 @@
     minio
     docker
     xxHash
+    firefox
     librewolf
     code-cursor
     home-manager
