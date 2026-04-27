@@ -66,6 +66,7 @@
           git-blame-line = build-pkg ./git-blame-line "git-blame-line";
           git-conflicts = build-pkg ./git-conflicts "git-conflicts";
           git-continue = build-pkg ./git-continue "git-continue";
+          git-modified = build-pkg ./git-modified "git-modified";
           safe-remove = build-pkg ./safe-remove "safe-remove";
           sh-prompt = build-pkg ./sh-prompt "sh-prompt";
           vi-project = build-pkg ./vi-project "vi-project";

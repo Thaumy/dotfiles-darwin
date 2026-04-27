@@ -11,6 +11,7 @@ in
     (git-blame-line "git-blame-line")
     (git-conflicts "git-conflicts")
     (git-continue "git-continue")
+    (git-modified "git-modified")
     (safe-remove "rr")
     (sh-prompt "sh-prompt")
     (vi-project "vp")
