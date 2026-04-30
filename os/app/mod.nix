@@ -1,6 +1,6 @@
 _: {
   imports = [
-    ./redis.nix
+    #./redis.nix
     ./sccache.nix
     ./homebrew.nix
   ];
