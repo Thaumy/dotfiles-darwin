@@ -5,6 +5,7 @@
     jfrog-cli
 
     fd
+    wget
     rsync
     watchexec
     applesauce
