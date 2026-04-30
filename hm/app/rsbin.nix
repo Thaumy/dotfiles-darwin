@@ -13,10 +13,14 @@ in
     (git-continue "git-continue")
     (git-modified "git-modified")
     (safe-remove "rr")
+    (sh-history-filter "shf")
     (sh-prompt "sh-prompt")
     (vi-project "vp")
     (vi-visual-pane "vvp")
   ];
 
-  xdg.configFile."rsbin/edit-config/config.toml".source = mkSymlink "${homeDir}/cfg/rsbin/edit-config/config.toml";
+  xdg.configFile = {
+    "rsbin/edit-config/config.toml".source = mkSymlink "${homeDir}/cfg/rsbin/edit-config/config.toml";
+    "sh-history-filter".source = mkSymlink "${homeDir}/cfg/shf";
+  };
 }

@@ -68,6 +68,13 @@
           git-continue = build-pkg ./git-continue "git-continue";
           git-modified = build-pkg ./git-modified "git-modified";
           safe-remove = build-pkg ./safe-remove "safe-remove";
+          sh-history-filter = build-pkg
+            (pkgs.fetchFromGitHub {
+              owner = "Thaumy";
+              repo = "sh-history-filter";
+              rev = "v0.0.5";
+              hash = "sha256-+r3S84KQEESPoSA86glyjZK/QSpoF2ujyQ1DwZaUNYw=";
+            }) "sh-history-filter";
           sh-prompt = build-pkg ./sh-prompt "sh-prompt";
           vi-project = build-pkg ./vi-project "vi-project";
           vi-visual-pane = build-pkg ./vi-visual-pane "vi-visual-pane";
