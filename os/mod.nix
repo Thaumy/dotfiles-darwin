@@ -8,8 +8,13 @@ _: {
     ./pkgs/mod.nix
   ];
 
-  system.stateVersion = 6;
-  system.primaryUser = "thaumy";
+  system = {
+    stateVersion = 6;
+    primaryUser = "thaumy";
+
+    defaults.NSGlobalDomain.KeyRepeat = 2;
+    defaults.NSGlobalDomain.InitialKeyRepeat = 12;
+  };
 
   users = {
     knownGroups = [ "bldcache" ];
