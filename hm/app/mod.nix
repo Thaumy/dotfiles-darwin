@@ -10,6 +10,7 @@ _: {
     ./fish.nix
     ./tmux.nix
     ./nvim.nix
+    ./less.nix
     ./rsbin.nix
     ./cargo.nix
     ./direnv.nix
