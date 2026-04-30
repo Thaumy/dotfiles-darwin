@@ -6,7 +6,9 @@
 
     fd
     wget
+    curl
     rsync
+    openssh
     watchexec
     applesauce
     util-linux

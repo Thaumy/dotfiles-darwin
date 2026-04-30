@@ -1,5 +1,8 @@
 { pkgs, ... }: with pkgs; [
-  uutils-diffutils
+  uutils-acl
+  uutils-sed
+  uutils-tar
+  uutils-hostname
   uutils-findutils
   uutils-coreutils-noprefix
 ]
