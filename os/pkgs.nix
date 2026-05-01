@@ -10,9 +10,6 @@
     watchexec
     applesauce
     util-linux
-    uutils-findutils
-    uutils-diffutils
-    uutils-coreutils-noprefix
 
     lf
     bat
