@@ -4,6 +4,7 @@
   environment.systemPackages = lib.flatten (map (path: pkgs.callPackage path { }) [
     ./text.nix
     ./tree.nix
+    ./uutils.nix
     ./archive.nix
   ]);
 }

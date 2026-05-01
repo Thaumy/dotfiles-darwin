@@ -24,10 +24,6 @@
     any-nix-shell
     unixtools.watch
 
-    uutils-findutils
-    uutils-diffutils
-    uutils-coreutils-noprefix
-
     cmake
     minio
     docker
