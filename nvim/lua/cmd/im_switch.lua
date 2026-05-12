@@ -1,5 +1,3 @@
--- auto switch input method
-
 if vim.env.USER == 'root' then return end
 
 local activate_next = false
