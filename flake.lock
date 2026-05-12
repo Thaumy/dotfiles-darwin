@@ -3,7 +3,7 @@
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
-          "nvim-nightly",
+          "nvim",
           "nixpkgs"
         ]
       },
@@ -149,7 +149,7 @@
         "type": "github"
       }
     },
-    "nvim-nightly": {
+    "nvim": {
       "inputs": {
         "flake-parts": "flake-parts",
         "neovim-src": "neovim-src",
@@ -223,7 +223,7 @@
         "hm": "hm",
         "libnvimcfg": "libnvimcfg",
         "nix-darwin": "nix-darwin",
-        "nvim-nightly": "nvim-nightly",
+        "nvim": "nvim",
         "pkgs": "pkgs_2",
         "rsbin": "rsbin",
         "rust-overlay": "rust-overlay_3"
