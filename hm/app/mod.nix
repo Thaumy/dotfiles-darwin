@@ -15,5 +15,6 @@ _: {
     ./cargo.nix
     ./direnv.nix
     ./alacritty.nix
+    ./karabiner.nix
   ];
 }
