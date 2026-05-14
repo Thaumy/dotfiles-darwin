@@ -6,6 +6,5 @@ _: {
   services.gpg-agent = {
     enable = true;
     enableSshSupport = true;
-    sshKeys = [ ];
   };
 }
