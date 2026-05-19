@@ -11,9 +11,6 @@ alias ps procs
 alias mx tmux
 alias cat "bat --style numbers"
 alias clr "clear && tmux clear-history"
-alias svs "sudo systemctl-tui"
-alias sctl systemctl
-alias hibernate "systemctl hibernate"
 
 alias q exit
 alias qa "tmux kill-session"
