@@ -31,6 +31,7 @@
     docker
     xxHash
     firefox
+    graphviz
     librewolf
     code-cursor
     home-manager
