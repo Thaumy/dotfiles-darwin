@@ -67,6 +67,7 @@
           git-conflicts = build-pkg ./git-conflicts "git-conflicts";
           git-continue = build-pkg ./git-continue "git-continue";
           safe-remove = build-pkg ./safe-remove "safe-remove";
+          sh-prompt = build-pkg ./sh-prompt "sh-prompt";
           vi-project = build-pkg ./vi-project "vi-project";
           vi-visual-pane = build-pkg ./vi-visual-pane "vi-visual-pane";
         };

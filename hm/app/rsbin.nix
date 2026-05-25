@@ -12,6 +12,7 @@ in
     (git-conflicts "git-conflicts")
     (git-continue "git-continue")
     (safe-remove "rr")
+    (sh-prompt "sh-prompt")
     (vi-project "vp")
     (vi-visual-pane "vvp")
   ];
