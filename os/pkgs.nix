@@ -27,7 +27,7 @@
     go
     cmake
     docker
-    xxHash
+    xxhash
     firefox
     graphviz
     librewolf
