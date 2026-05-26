@@ -26,13 +26,11 @@
     unixtools.watch
 
     cmake
-    minio
     docker
     xxHash
     firefox
     graphviz
     librewolf
-    code-cursor
     home-manager
   ];
 }
