@@ -2,7 +2,6 @@ alias g "command git"
 alias c cargo
 alias n "tmux new-window -ad"
 alias nvp "tmux new-window -ad && vp"
-alias vi nvim
 alias hm home-manager
 alias to "command touch"
 alias md "command mkdir"
@@ -13,10 +12,6 @@ alias cat "bat --style numbers"
 
 alias q exit
 alias qa "tmux kill-session"
-
-alias s sudo
-alias sc "sudo -u $USER"
-alias su "sudo su"
 
 alias hmb "home-manager build --flake path:(realpath $HOME/cfg) --cores 6 --no-out-link"
 alias hms "home-manager switch --flake path:(realpath $HOME/cfg)"
