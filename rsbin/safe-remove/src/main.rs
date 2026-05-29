@@ -12,7 +12,7 @@ fn main() {
                 return;
             }
             for path in paths {
-                println!("- {}", path.to_str().unwrap_or("- <NON UTF-8 PATH>"));
+                println!("- {}", path.to_str().unwrap_or("<NON-UTF-8 PATH>"));
             }
         }
         Err(e) => {
@@ -44,7 +44,7 @@ fn raw() -> Result<Vec<PathBuf>> {
             if cwd.starts_with(&path) {
                 bail!(
                     "`{}` is the parent or cwd, refuse to trash.",
-                    path.to_str().unwrap_or("<NON UTF-8 PATH>")
+                    path.to_str().unwrap_or("<NON-UTF-8 PATH>")
                 );
             }
             Ok(path)
