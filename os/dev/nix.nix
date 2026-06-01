@@ -1,5 +1,6 @@
 { inputs, config, pkgs, ... }: {
   nix = {
+    channel.enable = false;
     nixPath = [{ nixpkgs = inputs.pkgs; }];
 
     settings = {
