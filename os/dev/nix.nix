@@ -1,6 +1,10 @@
-{ pkgs, ... }: {
+{ inputs, config, pkgs, ... }: {
   nix = {
+    nixPath = [{ nixpkgs = inputs.pkgs; }];
+
     settings = {
+      nix-path = config.nix.nixPath;
+
       max-jobs = "auto";
       keep-going = true;
       keep-outputs = true;
