@@ -25,6 +25,7 @@
     any-nix-shell
     unixtools.watch
 
+    go
     cmake
     docker
     xxHash
