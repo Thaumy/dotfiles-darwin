@@ -32,7 +32,5 @@ in
       cargo-show-asm
       cargo-component
     ];
-
-    etc."sdk-homes/rust".source = toolchain;
   };
 }
