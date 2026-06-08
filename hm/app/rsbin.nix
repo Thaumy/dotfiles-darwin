@@ -15,6 +15,7 @@ in
     (safe-remove "rr")
     (sh-history-filter "shf")
     (sh-prompt "sh-prompt")
+    (sh-title "sh-title")
     (vi-project "vp")
     (vi-visual-pane "vvp")
   ];
