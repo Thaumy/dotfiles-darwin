@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     awscli2
-    jfrog-cli
 
     fd
     wget
