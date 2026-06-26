@@ -8,7 +8,7 @@
     };
 
     hm = {
-      url = "github:nix-community/home-manager/509ed3c603349a9d43de9e2ae6613baea6bd5b34"; # 26-5-23
+      url = "github:nix-community/home-manager/4b0b9474749820afac53ea30d4ccfef60aba5ce6"; # 26-6-23
       inputs.nixpkgs.follows = "pkgs";
     };
 
