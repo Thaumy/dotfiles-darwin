@@ -2,6 +2,7 @@ _: {
   imports = [
     ./sh/mod.nix
     ./app/mod.nix
+    ./symlink.nix
     ./daemon/mod.nix
   ];
 
