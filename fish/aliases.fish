@@ -9,6 +9,7 @@ alias du dust
 alias ps procs
 alias mx tmux
 alias cat "bat --style numbers"
+alias btp btop
 
 alias q exit
 alias qa "tmux kill-session"
