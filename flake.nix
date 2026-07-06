@@ -7,16 +7,16 @@
       inputs.nixpkgs.follows = "pkgs";
     };
 
+    hm = {
+      url = "github:nix-community/home-manager/509ed3c603349a9d43de9e2ae6613baea6bd5b34"; # 26-5-23
+      inputs.nixpkgs.follows = "pkgs";
+    };
+
     rust-overlay = {
       url = "github:oxalica/rust-overlay/40b0a3a193e0840c76174b4a322874c8f6dd0a63"; # 26-5-29
       inputs.nixpkgs.follows = "pkgs";
     };
     rsbin.url = "path:./rsbin";
-
-    hm = {
-      url = "github:nix-community/home-manager/509ed3c603349a9d43de9e2ae6613baea6bd5b34"; # 26-5-23
-      inputs.nixpkgs.follows = "pkgs";
-    };
 
     nvim.url = "github:nix-community/neovim-nightly-overlay/857c4b359c105ad56822e64fd35f9bf9f7947d70"; # 26-5-26
     libnvimcfg.url = "path:./nvim/lib";
