@@ -9,7 +9,7 @@ _: {
   ];
 
   system = {
-    stateVersion = 6;
+    stateVersion = 7;
     primaryUser = "thaumy";
 
     defaults.NSGlobalDomain.KeyRepeat = 2;
