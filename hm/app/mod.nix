@@ -3,6 +3,7 @@ _: {
     ./aws.nix
     ./git.nix
     ./gpg.nix
+    ./man.nix
     ./zsh.nix
     ./bat.nix
     ./btop.nix

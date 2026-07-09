@@ -7,7 +7,7 @@ _: {
 
   home = {
     username = "thaumy";
-    stateVersion = "25.05";
+    stateVersion = "26.05";
     homeDirectory = "/Users/thaumy";
   };
 
