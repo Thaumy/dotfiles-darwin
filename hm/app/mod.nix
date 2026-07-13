@@ -17,5 +17,6 @@ _: {
     ./direnv.nix
     ./alacritty.nix
     ./karabiner.nix
+    ./tmux-ws/mod.nix
   ];
 }
