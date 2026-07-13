@@ -20,6 +20,11 @@ in
     (vi-visual-pane "vvp")
   ];
 
+  programs.fish.completions.cfg = ''
+    complete -c cfg -f
+    complete -c cfg -n __fish_is_first_arg -a "(cfg)" -f
+  '';
+
   xdg.configFile = {
     "rsbin/edit-config/config.toml".source = mkSymlink "${homeDir}/cfg/rsbin/edit-config/config.toml";
     "sh-history-filter".source = mkSymlink "${homeDir}/cfg/shf";
