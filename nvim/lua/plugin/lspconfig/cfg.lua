@@ -102,6 +102,9 @@ vim_lsp.config('rust_analyzer', {
           },
         },
       },
+      files = {
+        excludeDirs = { '.direnv' },
+      },
     },
   },
 })
