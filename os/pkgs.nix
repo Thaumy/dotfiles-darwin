@@ -11,7 +11,6 @@
     applesauce
     util-linux
 
-    lf
     bat
     eza
     btop
