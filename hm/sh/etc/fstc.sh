@@ -2,6 +2,7 @@
 
 set -e
 
-applesauce compress -c lzvn "$HOME/.cargo"
-applesauce compress -c lzvn "$HOME/.cache/ra"
-applesauce compress -c lzvn "$HOME/.cache/cargo"
+applesauce compress -c lzvn \
+  "$HOME/.cargo" \
+  "$HOME/.cache/ra" \
+  "$HOME/.cache/cargo"
