@@ -24,6 +24,7 @@
     unixtools.watch
 
     go
+    qpdf
     cmake
     docker
     xxhash
