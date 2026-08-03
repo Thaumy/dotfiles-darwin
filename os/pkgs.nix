@@ -6,6 +6,7 @@
     wget
     curl
     rsync
+    jdupes
     openssh
     watchexec
     applesauce
