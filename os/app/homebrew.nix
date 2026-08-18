@@ -1,11 +1,8 @@
 _: {
   homebrew = {
     enable = true;
-    taps = [
-      "laishulu/homebrew"
-    ];
     brews = [
-      "macism"
+      "laishulu/homebrew/macism"
     ];
     casks = [
       "mos"
